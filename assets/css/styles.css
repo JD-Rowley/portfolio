@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EDEDF6;
+}
+
+/* Header Styles */
+header {
+    padding: 10px 10px 10px 60px;
+    background-color: #31343D;
+}
+
+header h1 a {
+    text-decoration: none;
+    background-color: #92CCCD;
+    font-weight: bold;
+    font-size: 36px;
+    color: #31343D;
+    margin: 10 0 10 0;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav a {
+    text-decoration: underline;
+    color: #92CCCD;
+}
+
+header nav ul li a {
+    margin: 0 10px;
+    font-weight: lighter;
+    font-size: x-large;
+}

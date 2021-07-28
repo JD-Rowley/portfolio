@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>JD Rowley's Porfolio</title>
 </head>
 <body>
 <!-- Navigation -->
 <header>
-    <h1>
-        <a href="/">Rowley</a>
-    </h1>
+    <div>
+        <h1>
+            <a href="/">Rowley</a>
+        </h1>
+    </div>
     <nav>
         <ul>
             <li>
-                <a href="#about-me">About Me</a>
+                <a href="#about">About Me</a>
             </li>
             <li>
                 <a href="#work">Work</a>
             </li>
             <li>
-                <a href="#contact-me">Contact Me</a>
+                <a href="#contact">Contact Me</a>
             </li>
             <li>
                 <a href="#resume">Resume</a>
@@ -32,7 +34,7 @@
 <!-- End Navigation -->
 
 <!-- Hero -->
-<section class="hero-section">
+<section class="hero">
     <h2>
         Call Me JD
     </h2>
@@ -40,102 +42,108 @@
 <!-- End Hero -->
 
 <!-- "About Me" Section -->
-<section id="about-me">
-    <div>
-        <h2>
-            About Me
-        </h2>
-    </div>
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis! Blanditiis quod labore sint odio optio maxime, libero exercitationem id commodi officiis unde iusto dolorem dolorum odit, beatae, fuga minus.
-        </p>
+<section id="about">
+    <div class="flex-container">
+        <div class="flex-left">
+            <h2>
+                About Me
+            </h2>
+        </div>
+        <div class="flex-right">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, facilis! Blanditiis quod labore sint odio optio maxime, libero exercitationem id commodi officiis unde iusto dolorem dolorum odit, beatae, fuga minus.
+            </p>
+        </div>
     </div>
 </section>
 <!-- End "About Me" Section -->
 
 <!-- "Work" Section -->
 <section id="work">
-    <div>
-        <h2>
-            Work
-        </h2>
-    </div>
-    <div class="portfolio">
-        <!-- Surf Report -->
-        <article class="surf-report">
-            <h3>
-                Surf Report
-            </h3>
-                <h4>
-                    MERN Stack
-                </h4>
-        </article>
-        <div class="work-sections">
-            <!-- LED Wall -->
-            <article class="led-wall">
+    <div class="flex-container">
+        <div class="flex-left">
+            <h2>
+                Work
+            </h2>
+        </div>
+        <div class="portfolio flex-right">
+            <!-- Surf Report -->
+            <article class="surf-report">
                 <h3>
-                    LED Wall
-                </h3>
-                    <h4>
-                        Node/IoT
-                    </h4>
-            </article>
-            <!-- Calculator -->
-            <article class="calculator">
-                <h3>
-                    Calculator
-                </h3>
-                    <h4>React/Javascript/CSS</h4>
-            </article>
-            <!-- Pastel Puzzle -->
-            <article class="pastel-puzzle">
-                <h3>
-                    Pastel Puzzle
+                    Surf Report
                 </h3>
                     <h4>
                         MERN Stack
                     </h4>
             </article>
-            <!-- Run Buddy -->
-            <article class="run-buddy">
-                <h3>
-                    Run Buddy
-                </h3>
-                    <h4>
-                        HTML/CSS
-                    </h4>
-            </article>
+            <div class="work-sections">
+                <!-- LED Wall -->
+                <article class="led-wall">
+                    <h3>
+                        LED Wall
+                    </h3>
+                        <h4>
+                            Node/IoT
+                        </h4>
+                </article>
+                <!-- Calculator -->
+                <article class="calculator">
+                    <h3>
+                        Calculator
+                    </h3>
+                        <h4>React/Javascript/CSS</h4>
+                </article>
+                <!-- Pastel Puzzle -->
+                <article class="pastel-puzzle">
+                    <h3>
+                        Pastel Puzzle
+                    </h3>
+                        <h4>
+                            MERN Stack
+                        </h4>
+                </article>
+                <!-- Run Buddy -->
+                <article class="run-buddy">
+                    <h3>
+                        Run Buddy
+                    </h3>
+                        <h4>
+                            HTML/CSS
+                        </h4>
+                </article>
+            </div>
         </div>
     </div>
 </section>
 <!-- End "Work" Section -->
 
-<!-- "Contact Me" Section -->
-<section>
-    <div>
-        <h2>
-            Contact Me
-        </h2>
+<!-- "Contact Me" Footer -->
+<footer>
+    <div class="flex-container">
+        <div class="flex-left">
+            <h2>
+                Contact Me
+            </h2>
+        </div>
+        <div class="flex-right">
+            <ul>
+                <li>
+                    <a>435.209.0084</a>
+                </li>
+                <li>
+                    <a>jdrowley1989@gmail.com</a>
+                </li>
+                <li>
+                    <a>GitHub</a>
+                </li>
+                <li>
+                    <a>LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <ul>
-            <li>
-                435.209.0084
-            </li>
-            <li>
-                jdrowley1989@gmail.com
-            </li>
-            <li>
-                GitHub
-            </li>
-            <li>
-                LinkedIn
-            </li>
-        </ul>
-    </div>
-</section>
-<!-- End "Contact Me" Section -->
+</footer>
+<!-- End "Contact Me" Footer -->
     
 </body>
 </html>

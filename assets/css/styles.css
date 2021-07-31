@@ -4,6 +4,10 @@
     --grey: #EDEDF6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -98,17 +102,22 @@ header nav ul li a:hover:after {
     background-position: 80%;
 }
 
-.hero h2 {
-    justify-content: flex-end;
-    color: #92CCCD;
-    margin: auto 10px;
-}
-
 .hero img {
     width: 250px;
     height: 250px;
     border-radius: 0 0 50% 0;
 }
+
+.hero h2 {
+    font-size: 46px;
+    font-style: italic;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* End Hero Styles */
 
 /* Class Styles */
@@ -134,17 +143,16 @@ header nav ul li a:hover:after {
     padding: 10px 10px;
 }
 
-.work-subtitle {
-    font-size: medium;
-}
-
 section h2 {
     color: #31343D;
+    font-size: 36px;
 }
 /* End Class Styles */
 
 /* About Me Styles */
-
+.about-para p {
+    font-size: 24px;
+}
 /* End About Me Styles */
 
 /* Work Styles */
@@ -153,23 +161,36 @@ section h2 {
     flex-wrap: wrap;
     width: 80vw;
     height: 1260px;
-    margin: 0 0 0 0;
+    margin: 0 -5px;
 }
 
 .portfolio h3 {
     color: #31343D;
+    font-size: 30px;
     background: #92CCCD;
-    width: 200px;
-    height: 45px;
+    align-items: center;
+    width: 300px;
+    height: 100px;
     margin: -1px 0 0 -1px;
+}
+
+.work-subtitle {
+    font-size: 24px;
+    padding: 5px 0;
 }
 
 .surf-report {
     display: flex;
-    width: 100%;
+    width: 97.5%;
     height: 600px;
     margin: 10px;
     border: #92CCCD 5px solid;
+    overflow: hidden;
+}
+
+.surf-report a img {
+    display: flex;
+    size: cover;
 }
 
 .surf-report h3 {
@@ -190,17 +211,21 @@ section h2 {
     width: 38vw;
     height: 300px;
     border: #92CCCD 5px solid;
+    overflow: hidden;
 }
 
 .work-sections img {
-    height: 100%;
-    width: fit-content;
+    width: 100%;
+    height: auto;
 }
 /* End Work Styles */
 
 /* Footer Styles */
 footer {
-    background-color: #31343D;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom right;
     padding: 15px 0;
 }
 

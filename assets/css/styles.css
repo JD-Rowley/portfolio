@@ -167,10 +167,10 @@ section h2 {
     color: #31343D;
     font-size: 30px;
     background: #92CCCD;
-    align-items: center;
     width: 300px;
     height: 100px;
-    margin: 0;
+    padding: 10px 0 0 10px;
+    margin: 0 0 0 -1px;
 }
 
 .work-subtitle {
@@ -179,7 +179,6 @@ section h2 {
 }
 
 .surf-report {
-    display: fixed;
     background-image: url(/assets/images/surf-report.jpg);
     background-size: cover;
     background-position: center;
@@ -240,10 +239,17 @@ section h2 {
     display: block;
     height: 100%;
     width: 100%;
+    transition: all .2s ease-in-out;
 }
 
 .surf-report a:hover, .led-wall a:hover, .calculator a:hover, .run-buddy a:hover, .pastel-puzzle a:hover {
-    background-color: rgba(146, 204, 205, 0.5);
+    background-color: rgba(146, 204, 205, 0.4);
+    transform: scale(1.03);
+}
+
+.surf-report a:focus, .led-wall a:focus, .calculator a:focus, .run-buddy a:focus, .pastel-puzzle a:focus {
+    background-color: rgba(146, 204, 205, 0.4);
+    transform: scale(1);
 }
 
 /* End Work Styles */

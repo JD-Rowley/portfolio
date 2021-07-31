@@ -100,6 +100,7 @@ header nav ul li a:hover:after {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
+    justify-content: space-between;
 }
 
 .hero img {
@@ -112,9 +113,7 @@ header nav ul li a:hover:after {
     font-size: 46px;
     font-style: italic;
     color: var(--green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 170px 40px 0 0;
 }
 
 
@@ -171,7 +170,7 @@ section h2 {
     align-items: center;
     width: 300px;
     height: 100px;
-    margin: -1px 0 0 -1px;
+    margin: 0;
 }
 
 .work-subtitle {
@@ -180,17 +179,18 @@ section h2 {
 }
 
 .surf-report {
-    display: flex;
+    display: fixed;
+    background-image: url(/assets/images/surf-report.jpg);
+    background-size: cover;
+    background-position: center;
     width: 97.5%;
     height: 600px;
-    margin: 10px;
     border: #92CCCD 5px solid;
-    overflow: hidden;
 }
 
-.surf-report a img {
-    display: flex;
-    size: cover;
+.surf-report img {
+    width: 100%;
+    height: auto;
 }
 
 .surf-report h3 {
@@ -207,17 +207,45 @@ section h2 {
 }
 
 .work-sections article {
-    display: flex;
     width: 38vw;
     height: 300px;
     border: #92CCCD 5px solid;
-    overflow: hidden;
 }
 
-.work-sections img {
-    width: 100%;
-    height: auto;
+.led-wall {
+    background-image: url(/assets/images/led-wall.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
+.calculator {
+    background-image: url(/assets/images/calculator.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pastel-puzzle {
+    background-image: url(/assets/images/mern.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.run-buddy {
+    background-image: url(/assets/images/run-buddy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.surf-report a, .led-wall a, .calculator a, .run-buddy a, .pastel-puzzle a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.surf-report a:hover, .led-wall a:hover, .calculator a:hover, .run-buddy a:hover, .pastel-puzzle a:hover {
+    background-color: rgba(146, 204, 205, 0.5);
+}
+
 /* End Work Styles */
 
 /* Footer Styles */

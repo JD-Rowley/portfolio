@@ -36,12 +36,15 @@ header {
 }
 
 header h1 a {
-    text-decoration: none;
-    font-size: 36px;
+    font-size: 40px;
     color: var(--dark);
     padding: 5px 20px 5px 60px;
     background: #92CCCD;
     margin: 0 0 0 -60px;
+}
+
+header a {
+    text-decoration: none;
 }
 
 header nav {
@@ -56,12 +59,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li {
-    display: inline;
-}
-
 header nav a {
-    text-decoration: none;
     color: #92CCCD;
     padding: 0 7px;
 }
@@ -69,7 +67,7 @@ header nav a {
 header nav ul li a {
     margin: 0 10px;
     font-weight: lighter;
-    font-size: x-large;
+    font-size: 32px;
     position: relative;
 }
 
@@ -179,7 +177,7 @@ section h2 {
 }
 
 .surf-report {
-    background-image: url(/assets/images/surf-report.jpg);
+    background-image: url(../images/surf-report.jpg);
     background-size: cover;
     background-position: center;
     width: 97.5%;
@@ -212,25 +210,25 @@ section h2 {
 }
 
 .led-wall {
-    background-image: url(/assets/images/led-wall.jpg);
+    background-image: url(../images/led-wall.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .calculator {
-    background-image: url(/assets/images/calculator.jpg);
+    background-image: url(../images/calculator.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .pastel-puzzle {
-    background-image: url(/assets/images/mern.jpg);
+    background-image: url(../images/mern.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .run-buddy {
-    background-image: url(/assets/images/run-buddy.jpg);
+    background-image: url(../images/run-buddy.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -265,7 +263,7 @@ footer {
 
 footer div ul li a {
     text-decoration: none;
-    margin: 20px 60px 20px 60px;
+    margin: 20px 60px;
     color: var(--green);
     padding: 0 5px;
     position: relative;
@@ -324,12 +322,16 @@ footer div ul li:first-child {
         background: rgba(146, 204, 205, 0.7);
         width: 300px;
         height: 100px;
-        padding: 10px 0 0 10px;
+        padding: 5px;
         margin: -1px 0 0 -1px;
+    }
+    
+    .surf-report {
+        margin: 0 auto 10px auto;
     }
 
     .work-sections {
-        margin: 0 0 0 -10px;
+        margin: 0 auto;
     }
 
     .work-sections article {
@@ -342,14 +344,39 @@ footer div ul li:first-child {
     }
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
+    header a {
+        padding: 0;
+        margin: 0;
+    }
+
     header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
     }
-    
-    footer div ul li a {
+
+    header nav ul li a {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        margin: 130px 30px 0 60px;
+        text-align: right;
+    }
+
+    footer div {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header a {
+        padding: 0;
         margin: 0;
+    }
+
+    header nav ul li a {
+        font-size: 24px;
     }
 }

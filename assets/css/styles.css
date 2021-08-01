@@ -298,3 +298,58 @@ footer div ul li:first-child {
     border-left: none;
 }
 /* End Footer Styles */
+
+/* Media Query */
+@media screen and (max-width: 980px) {
+    .flex-left h2 {
+        text-align: right;
+        margin: auto 10px;
+        padding: 0;
+    }
+
+    .flex-right {
+        margin: auto 15px;
+    }
+
+    .portfolio {
+        display: block;
+        width: 80vw;
+        height: 1890px;
+        margin: 10px;
+    }
+
+    .portfolio h3 {
+        color: #31343D;
+        font-size: 30px;
+        background: rgba(146, 204, 205, 0.7);
+        width: 300px;
+        height: 100px;
+        padding: 10px 0 0 10px;
+        margin: -1px 0 0 -1px;
+    }
+
+    .work-sections {
+        margin: 0 0 0 -10px;
+    }
+
+    .work-sections article {
+        width: 100%;
+        margin: 10px;
+    }
+
+    footer div ul li a {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768) {
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    footer div ul li a {
+        margin: 0;
+    }
+}

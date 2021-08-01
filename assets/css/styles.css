@@ -379,4 +379,16 @@ footer div ul li:first-child {
     header nav ul li a {
         font-size: 24px;
     }
+
+    .hero h2 {
+        margin-top: auto;
+    }
+
+    .surf-report h3 {
+        width: 100%;
+    }
+
+    .work-sections h3 {
+        width: 100%;
+    }
 }

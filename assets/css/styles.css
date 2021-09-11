@@ -177,9 +177,9 @@ section h2 {
 }
 
 .surf-report {
-    background-image: url(../images/surf-report.jpg);
+    background-image: url(../images/LocalGrub.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     width: 97.5%;
     height: 600px;
     border: #92CCCD 5px solid;
@@ -193,6 +193,7 @@ section h2 {
 .surf-report h3 {
     margin: -600 0 0 2px;
     background-color: var(--green);
+    width: 400px;
 }
 
 .work-sections {
